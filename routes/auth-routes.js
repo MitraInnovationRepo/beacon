@@ -24,7 +24,7 @@ router.get("/", (req, res) => {
 
 
     //  
-    res.send("Yolla bitchers")
+    res.send("Successful Login")
   } else {
     res.redirect('/auth/login');
   }
@@ -48,7 +48,7 @@ router.get("/google/redir", passport.authenticate('google', { failureRedirect: '
         }
       });
 
-    res.send('yolla');
+    res.send('Successful authentication');
     // Successful authentication, redirect home.
   })
 
